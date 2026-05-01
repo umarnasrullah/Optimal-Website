@@ -1,0 +1,953 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Physician AssistPro | Elite Medical Scribing Solutions</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Main Navbar (Strictly Preserved Links) -->
+    <nav class="navbar" id="navbar">
+      <div class="container nav-container">
+        <a href="index.html" class="brand">
+          <img
+            src="assets/logo.svg"
+            alt="Physician AssistPro Logo"
+            class="nav-logo"
+          />
+        </a>
+
+        <ul class="nav-links">
+          <li class="nav-item"><a href="index.html">Home</a></li>
+
+          <li class="nav-item">
+            <a href="#services"
+              >Services
+              <svg
+                class="chevron"
+                width="10"
+                height="10"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M6 9l6 6 6-6" />
+              </svg>
+            </a>
+            <div class="dropdown">
+              <a href="services/live.html">Live Scribing</a>
+              <a href="services/virtual.html">Virtual Scribing</a>
+              <a href="services/async.html">Async Scribing</a>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a href="#specialties"
+              >Specialties
+              <svg
+                class="chevron"
+                width="10"
+                height="10"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M6 9l6 6 6-6" />
+              </svg>
+            </a>
+            <div class="dropdown">
+              <a href="specialties/cardiology.html">Cardiology</a>
+              <a href="specialties/dermatology.html">Dermatology</a>
+              <a href="specialties/orthopedic.html">Orthopedic</a>
+            </div>
+          </li>
+
+          <li class="nav-item"><a href="about.html">About</a></li>
+          <li class="nav-item"><a href="pricing.html">Pricing</a></li>
+          <li class="nav-item"><a href="compliance.html">Compliance</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="#booking" class="btn btn-primary">Book Demo</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <h1>
+            Practice Medicine.<br />We’ll Handle the <span>Charting.</span>
+          </h1>
+          <p>
+            Enterprise-grade medical scribing tailored for specialized clinics.
+            Reclaim 3 hours a day, eliminate physician burnout, and ensure 100%
+            chart accuracy.
+          </p>
+          <div class="hero-buttons">
+            <a href="#booking" class="btn btn-primary">Start Free Trial</a>
+            <a href="#services" class="btn btn-outline">Learn How It Works</a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal delay-1">
+          <div class="ui-card">
+            <div class="ui-header">
+              <div class="ui-status">Live Sync Active</div>
+              <div
+                style="
+                  color: var(--slate-600);
+                  font-size: 0.85rem;
+                  font-weight: 600;
+                "
+              >
+                Epic EMR
+              </div>
+            </div>
+            <div class="ui-row">
+              <span class="ui-label">Patient Status</span>
+              <span class="ui-value">Completed & Billed</span>
+            </div>
+            <div class="ui-row">
+              <span class="ui-label">Time Saved Today</span>
+              <span
+                class="ui-value"
+                style="color: var(--emerald-500); font-weight: 700"
+                >2 hrs 14 mins</span
+              >
+            </div>
+            <div class="ui-row">
+              <span class="ui-label">Accuracy Rate</span>
+              <span class="ui-value">99.8% Verified</span>
+            </div>
+            <div
+              class="ui-row"
+              style="
+                margin-bottom: 0;
+                padding-top: 16px;
+                border-top: 1px solid var(--slate-100);
+              "
+            >
+              <span class="ui-label">HIPAA Compliance</span>
+              <span class="ui-value">Secured (SOC 2)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Metrics -->
+    <div class="metrics">
+      <div class="container metrics-grid reveal">
+        <div class="metric-item">
+          <h3>3.2 hrs</h3>
+          <p>Saved Daily per MD</p>
+        </div>
+        <div class="metric-item">
+          <h3>99.8%</h3>
+          <p>Coding Accuracy</p>
+        </div>
+        <div class="metric-item">
+          <h3>Zero</h3>
+          <p>Software to Install</p>
+        </div>
+        <div class="metric-item">
+          <h3>100%</h3>
+          <p>HIPAA Compliant</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- NEW: The Solution -->
+    <section id="solution" class="section-padding bg-slate">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="tagline">The Solution</span>
+          <h2>Stop hiring scribes. Hire a physician.</h2>
+          <p>
+            Most scribing services train generalists. We start with physicians —
+            then train them in your workflow.
+          </p>
+        </div>
+
+        <div class="comparison-grid reveal">
+          <div class="comp-card">
+            <h3>Typical Scribing Service</h3>
+            <ul class="comp-list">
+              <li>
+                <span class="icon-x">×</span> Non-clinical hires reading
+                templates
+              </li>
+              <li>
+                <span class="icon-x">×</span> High turnover — re-train every
+                quarter
+              </li>
+              <li>
+                <span class="icon-x">×</span> Generic notes, frequent
+                corrections
+              </li>
+              <li>
+                <span class="icon-x">×</span> Charting only — billing/admin
+                still on you
+              </li>
+              <li>
+                <span class="icon-x">×</span> Per-hour fees, surprise overages
+              </li>
+            </ul>
+          </div>
+          <div class="comp-card pro">
+            <div class="badge">Physician Assist Pro</div>
+            <h3>Physician-Powered CSS</h3>
+            <ul class="comp-list">
+              <li>
+                <span class="icon-check">✓</span> MD/MBBS-trained, US-healthcare
+                certified
+              </li>
+              <li>
+                <span class="icon-check">✓</span> Dedicated long-term assignment
+              </li>
+              <li>
+                <span class="icon-check">✓</span> Audit-ready notes on the first
+                draft
+              </li>
+              <li>
+                <span class="icon-check">✓</span> Charting + coding + billing +
+                admin
+              </li>
+              <li>
+                <span class="icon-check">✓</span> Flat monthly pricing — up to
+                70% less
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section-padding">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="tagline">Our Solutions</span>
+          <h2>Scribing that fits your exact workflow.</h2>
+          <p>
+            Whether you need a scribe dialed in via tablet during patient
+            encounters, or next-morning chart completion, our ecosystem adapts
+            to you.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card reveal">
+            <div class="icon-box">
+              <svg
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M15.6 11.6L22 7v10l-6.4-4.5v-1zM4 5h9a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7c0-1.1.9-2 2-2z"
+                />
+              </svg>
+            </div>
+            <h3>Live Scribing</h3>
+            <p>
+              Real-time charting via secure audio or video connection. Walk out
+              of the exam room with your notes already completed and ready to
+              sign.
+            </p>
+            <a href="services/live.html" class="learn-more"
+              >Explore Live Scribing →</a
+            >
+          </div>
+
+          <div class="service-card reveal delay-1">
+            <div class="icon-box">
+              <svg
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                <line x1="8" y1="21" x2="16" y2="21" />
+                <line x1="12" y1="17" x2="12" y2="21" />
+              </svg>
+            </div>
+            <h3>Virtual Scribing</h3>
+            <p>
+              Dedicated remote specialists integrated directly into your
+              clinic's daily schedule, managing your EMR inbox and documentation
+              workflows.
+            </p>
+            <a href="services/virtual.html" class="learn-more"
+              >Explore Virtual Scribing →</a
+            >
+          </div>
+
+          <div class="service-card reveal delay-2">
+            <div class="icon-box">
+              <svg
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"
+                />
+              </svg>
+            </div>
+            <h3>Async Scribing</h3>
+            <p>
+              Dictate your notes between patients or at the end of the day. Our
+              team transforms your audio into structured, billable charts by the
+              next morning.
+            </p>
+            <a href="services/async.html" class="learn-more"
+              >Explore Async Scribing →</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEW: Capabilities / What We Handle (From Image 2) -->
+    <section id="capabilities" class="section-padding bg-slate">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="tagline">What we handle</span>
+          <h2>One CSS. Nine things off your plate.</h2>
+        </div>
+
+        <div class="cap-grid reveal">
+          <div class="cap-card">
+            <h3>Practice Management</h3>
+            <ul class="cap-list">
+              <li>Operations & staff coordination</li>
+              <li>Vendor & credentialing follow-through</li>
+              <li>Workflow design</li>
+            </ul>
+          </div>
+          <div class="cap-card">
+            <h3>EMR & Charting</h3>
+            <ul class="cap-list">
+              <li>Real-time SOAP notes</li>
+              <li>Claimocity, PCC, Net Health, Epic + 12 more</li>
+              <li>Inbox & document triage</li>
+            </ul>
+          </div>
+          <div class="cap-card">
+            <h3>Billing & Coding</h3>
+            <ul class="cap-list">
+              <li>ICD-10 / CPT (rehab + E/M)</li>
+              <li>Claim scrubbing & denial management</li>
+              <li>Senior-MD audited</li>
+            </ul>
+          </div>
+          <div class="cap-card">
+            <h3>Rehab Documentation</h3>
+            <ul class="cap-list">
+              <li>Therapy notes & progress tracking</li>
+              <li>Functional assessments, ADL/IADL</li>
+              <li>Audit-ready language</li>
+            </ul>
+          </div>
+          <div class="cap-card">
+            <h3>Care Coordination</h3>
+            <ul class="cap-list">
+              <li>Referrals & prior auths</li>
+              <li>Lab, imaging, DME orders</li>
+              <li>Pharmacy callbacks</li>
+            </ul>
+          </div>
+          <div class="cap-card">
+            <h3>Scheduling</h3>
+            <ul class="cap-list">
+              <li>Booking & confirmations</li>
+              <li>No-show recovery</li>
+              <li>Triage messages</li>
+            </ul>
+          </div>
+          <div class="cap-card">
+            <h3>Correspondence</h3>
+            <ul class="cap-list">
+              <li>Referral letters</li>
+              <li>Peer-to-peer reviews</li>
+              <li>Patient communications</li>
+            </ul>
+          </div>
+          <div class="cap-card">
+            <h3>Marketing & Growth</h3>
+            <ul class="cap-list">
+              <li>Reputation management</li>
+              <li>Content scheduling</li>
+              <li>Patient outreach</li>
+            </ul>
+          </div>
+          <div class="cap-card custom-scope">
+            <h3>Custom scope</h3>
+            <ul class="cap-list">
+              <li>RPM monitoring</li>
+              <li>Surgical case prep</li>
+            </ul>
+            <a href="#booking">Talk to us →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEW: How it works -->
+    <section id="how-it-works" class="section-padding">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="tagline">How it works</span>
+          <h2>Live in 7 days.</h2>
+        </div>
+        <div class="grid-4 reveal">
+          <div class="timeline-step">
+            <div class="step-num">01</div>
+            <h3>Demo call</h3>
+            <p>30 min. Map your specialty, EMR, and bottlenecks.</p>
+          </div>
+          <div class="timeline-step delay-1">
+            <div class="step-num">02</div>
+            <h3>Match & train</h3>
+            <p>Days 2–4. We pair you with a physician CSS.</p>
+          </div>
+          <div class="timeline-step delay-2">
+            <div class="step-num">03</div>
+            <h3>Go live</h3>
+            <p>Days 5–7. Real encounters, daily QA review.</p>
+          </div>
+          <div class="timeline-step delay-3">
+            <div class="step-num">04</div>
+            <h3>Optimize</h3>
+            <p>Monthly. Track turnaround, denials, hours saved.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEW: The Proof -->
+    <section id="proof" class="section-padding bg-navy-dark">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="tagline">The proof</span>
+          <h2 style="color: var(--white)">
+            Physicians don't lie about<br />their evenings.
+          </h2>
+        </div>
+        <div class="grid-3 reveal">
+          <div class="testimonial-card">
+            <div>
+              <div class="stars">★ ★ ★ ★ ★</div>
+              <p class="quote-text">
+                "I went from finishing charts at 9pm to walking out at 5:30. My
+                CSS isn't just typing — she's catching coding gaps and prepping
+                the next patient before I sit down."
+              </p>
+            </div>
+            <div class="author">
+              <div class="avatar" style="background: #3b82f6">SR</div>
+              <div>
+                <strong style="display: block; color: var(--white)"
+                  >Dr. Sarah Reese, MD</strong
+                ><span style="font-size: 0.85rem; color: var(--slate-300)"
+                  >Physiatry · Charleston, SC</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card delay-1">
+            <div>
+              <div class="stars">★ ★ ★ ★ ★</div>
+              <p class="quote-text">
+                "We replaced two in-house scribes and one biller with a Practice
+                plan and saw cleaner claims within the first month. Denials
+                dropped 31%. The math just works."
+              </p>
+            </div>
+            <div class="author">
+              <div class="avatar" style="background: #10b981">JM</div>
+              <div>
+                <strong style="display: block; color: var(--white)"
+                  >Dr. Jonas Mehta, DO</strong
+                ><span style="font-size: 0.85rem; color: var(--slate-300)"
+                  >Internal Medicine · Austin, TX</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card delay-2">
+            <div>
+              <div class="stars">★ ★ ★ ★ ★</div>
+              <p class="quote-text">
+                "I've used three scribe vendors before this. None of them
+                understood rehab documentation. PAP's CSS knew my templates by
+                week two. Genuine partner."
+              </p>
+            </div>
+            <div class="author">
+              <div class="avatar" style="background: #8b5cf6">AT</div>
+              <div>
+                <strong style="display: block; color: var(--white)"
+                  >Dr. Aisha Tariq, MD</strong
+                ><span style="font-size: 0.85rem; color: var(--slate-300)"
+                  >PM&R · Phoenix, AZ</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEW: EMR Partners (From Image 3) -->
+    <section id="emr" class="section-padding bg-slate">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="tagline">Check support</span>
+          <h2>Works with your EMR<br />15+ EMR systems. One CSS.</h2>
+        </div>
+        <div class="emr-grid reveal">
+          <div class="emr-card emr-claimocity">Claimocity</div>
+          <div class="emr-card emr-pcc">
+            PCC
+            <div class="emr-sub">PointClickCare</div>
+          </div>
+          <div class="emr-card emr-nethealth">Net Health</div>
+          <div class="emr-card emr-docnow">DocNow</div>
+          <div class="emr-card emr-arista">Arista</div>
+          <div class="emr-card emr-epic">Epic</div>
+          <div class="emr-card emr-athena">athenahealth</div>
+          <div class="emr-card emr-eclinical">eClinicalWorks</div>
+          <div class="emr-card emr-kareo">
+            Kareo
+            <div class="emr-sub">/ Tebra</div>
+          </div>
+          <div class="emr-card emr-drchrono">DrChrono</div>
+          <div class="emr-card emr-nextgen">NextGen</div>
+          <div class="emr-card emr-practicefusion">Practice Fusion</div>
+          <div class="emr-card emr-advancedmd">AdvancedMD</div>
+          <div class="emr-card emr-cerner">
+            Cerner
+            <div class="emr-sub">Oracle Health</div>
+          </div>
+          <div class="emr-card emr-more">
+            + many more <br /><a
+              href="#booking"
+              style="
+                font-weight: 400;
+                text-decoration: none;
+                color: inherit;
+                font-size: 0.8rem;
+                margin-top: 5px;
+              "
+              >Ask us →</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Specialties (Updated with Green Hover from Image 1) -->
+    <section id="specialties" class="section-padding bg-navy-dark">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="tagline">Deep Clinical Expertise</span>
+          <h2 style="color: var(--white)">
+            We speak your specialty's language.
+          </h2>
+          <p style="color: var(--slate-300)">
+            General scribes slow you down. Our specialists are pre-trained in
+            the specific terminology, coding, and formatting requirements of
+            your field.
+          </p>
+        </div>
+
+        <div class="specialty-grid reveal">
+          <a href="specialties/cardiology.html" class="specialty-card">
+            <h3>Cardiology</h3>
+            <p>
+              Mastery of complex cardiovascular terminologies, EKG
+              interpretations, and specialized billing codes.
+            </p>
+          </a>
+          <a href="specialties/dermatology.html" class="specialty-card delay-1">
+            <h3>Dermatology</h3>
+            <p>
+              Rapid charting for high-volume clinics. Accurate anatomical
+              mapping, biopsy logging, and cosmetic procedures.
+            </p>
+          </a>
+          <a href="specialties/orthopedic.html" class="specialty-card delay-2">
+            <h3>Orthopedic</h3>
+            <p>
+              Detailed documentation for surgical interventions, imaging
+              interpretations, and post-op physical therapy plans.
+            </p>
+          </a>
+        </div>
+
+        <div class="text-center mt-4 pt-4 reveal" style="margin-top: 40px">
+          <a
+            href="#booking"
+            class="btn btn-outline"
+            style="border-color: var(--white); color: var(--white)"
+            >Don't see yours? Contact us.</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Compliance -->
+    <section class="compliance">
+      <div class="container comp-grid reveal">
+        <div class="comp-item">
+          <div class="comp-icon">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+              <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+            </svg>
+          </div>
+          <div class="comp-text">
+            <h4>100% HIPAA Compliant</h4>
+            <p>End-to-end encrypted infrastructure.</p>
+          </div>
+        </div>
+        <div class="comp-item">
+          <div class="comp-icon">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+              />
+            </svg>
+          </div>
+          <div class="comp-text">
+            <h4>Top 1% Talent</h4>
+            <p>Rigorous clinical vetting process.</p>
+          </div>
+        </div>
+        <div class="comp-item">
+          <div class="comp-icon">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"
+              />
+            </svg>
+          </div>
+          <div class="comp-text">
+            <h4>EMR Agnostic</h4>
+            <p>Epic, Cerner, Athena, and 40+ more.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section-padding bg-slate">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="tagline">Common Questions</span>
+          <h2>Frequently Asked Questions</h2>
+          <p>
+            Everything you need to know about integrating Physician AssistPro
+            into your practice.
+          </p>
+        </div>
+
+        <div class="faq-container reveal">
+          <div class="faq-item">
+            <button class="faq-question">
+              How does integration with our EMR work?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Our scribes work directly within your existing EMR system. We
+                establish secure, HIPAA-compliant remote access protocols
+                tailored to your IT department's specifications. We support
+                Epic, Cerner, AthenaHealth, eClinicalWorks, and over 40 other
+                systems.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              Are your scribes based in the US? <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                We utilize a global workforce of highly vetted medical
+                professionals. All scribes undergo rigorous HIPAA training,
+                language proficiency testing, and specialty-specific medical
+                terminology education before being matched with a provider.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              What is the training process for a new scribe?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Every scribe undergoes a comprehensive 4-week training program
+                covering anatomy, pathophysiology, medical coding, and EMR
+                navigation. Once assigned to you, they complete a targeted
+                "shadowing" period to learn your specific charting preferences
+                and workflow.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              Is there a long-term contract required?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                No. We believe in earning your business every month. After an
+                initial 90-day pilot program to ensure a perfect fit, our
+                services operate on a flexible, month-to-month basis.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking -->
+    <section id="booking" class="section-padding">
+      <div class="container">
+        <div class="booking-grid reveal">
+          <div class="booking-content">
+            <h2>Book Your Free Workflow Audit</h2>
+            <p>
+              Schedule a 15-minute discovery call. We'll analyze your current
+              documentation burden and show you exactly how much time Physician
+              AssistPro can save your clinic.
+            </p>
+            <ul class="booking-benefits">
+              <li>✓ Custom ROI calculation</li>
+              <li>✓ EMR integration review</li>
+              <li>✓ Pilot program details</li>
+            </ul>
+          </div>
+          <div class="booking-form-wrapper">
+            <form class="booking-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="firstName">First Name</label>
+                  <input
+                    type="text"
+                    id="firstName"
+                    class="form-control"
+                    required
+                    placeholder="Dr. Jane"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="lastName">Last Name</label>
+                  <input
+                    type="text"
+                    id="lastName"
+                    class="form-control"
+                    required
+                    placeholder="Doe"
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="email">Work Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  class="form-control"
+                  required
+                  placeholder="doctor@clinic.com"
+                />
+              </div>
+              <div class="form-group">
+                <label for="specialty">Medical Specialty</label>
+                <select id="specialty" class="form-control" required>
+                  <option value="" disabled selected>
+                    Select your specialty...
+                  </option>
+                  <option value="cardiology">Cardiology</option>
+                  <option value="dermatology">Dermatology</option>
+                  <option value="orthopedics">Orthopedics</option>
+                  <option value="primary-care">
+                    Primary Care / Family Medicine
+                  </option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <button
+                type="button"
+                class="btn btn-primary"
+                style="width: 100%; justify-content: center; margin-top: 10px"
+              >
+                Schedule Audit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+      <div class="container reveal">
+        <div class="cta-box">
+          <h2>Ready to leave the clinic at 5 PM?</h2>
+          <p>
+            Stop letting documentation dictate your schedule. Partner with
+            Physician AssistPro and return your focus to patient care.
+          </p>
+          <a
+            href="#booking"
+            class="btn btn-primary"
+            style="padding: 20px 40px; font-size: 1.1rem"
+            >Start Free Trial</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="brand">
+              <img
+                src="assets/logo.svg"
+                alt="Logo"
+                style="height: 150px; vertical-align: middle; margin-right: 8px"
+              />
+            </div>
+            <p>
+              Elite medical scribing solutions empowering physicians to practice
+              medicine, not data entry.
+            </p>
+          </div>
+
+          <div class="footer-col">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="services/live.html">Live Scribing</a></li>
+              <li><a href="services/virtual.html">Virtual Scribing</a></li>
+              <li><a href="services/async.html">Async Scribing</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="pricing.html">Pricing</a></li>
+              <li><a href="#faq">FAQ</a></li>
+              <li><a href="#booking">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Legal & Trust</h4>
+            <ul>
+              <li><a href="compliance.html">HIPAA Compliance</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2026 Physician AssistPro. All rights reserved.</p>
+          <p>Secured by Enterprise-Grade Encryption</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Inline JS for Dropdowns, FAQ & Animations -->
+    <script>
+      // FAQ Accordion
+      document.querySelectorAll(".faq-question").forEach((button) => {
+        button.addEventListener("click", () => {
+          const faqItem = button.parentElement;
+          faqItem.classList.toggle("active");
+        });
+      });
+
+      // Scroll Reveal
+      function reveal() {
+        var reveals = document.querySelectorAll(".reveal");
+        for (var i = 0; i < reveals.length; i++) {
+          var windowHeight = window.innerHeight;
+          var elementTop = reveals[i].getBoundingClientRect().top;
+          var elementVisible = 100;
+          if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+          }
+        }
+      }
+      window.addEventListener("scroll", reveal);
+      reveal();
+
+      // Navbar Shrink Effect
+      window.addEventListener("scroll", function () {
+        var navbar = document.getElementById("navbar");
+        if (window.scrollY > 50) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+    </script>
+  </body>
+</html>
